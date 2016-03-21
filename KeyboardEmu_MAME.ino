@@ -7,10 +7,10 @@ void setup() {
   
   
   //Joystick and buttons pin allocations  
-  pinMode(2, INPUT_PULLUP); //Joystick Up  
-  pinMode(3, INPUT_PULLUP); //Joystick Down  
-  pinMode(4, INPUT_PULLUP); //Joystick Left  
-  pinMode(5, INPUT_PULLUP); //Joystick Right  
+  pinMode(5, INPUT_PULLUP); //Joystick Up  
+  pinMode(4, INPUT_PULLUP); //Joystick Down  
+  pinMode(3, INPUT_PULLUP); //Joystick Left  
+  pinMode(2, INPUT_PULLUP); //Joystick Right  
   pinMode(6, INPUT_PULLUP); //Button 1  
   pinMode(7, INPUT_PULLUP); //Button 2  
   pinMode(8, INPUT_PULLUP); //Button 3  
@@ -107,21 +107,21 @@ void loop() {
   }
 
 
-  // Coin - 5
+  // Select - Esc
   if (coin == LOW) {
-    Keyboard.press(53);
+    Keyboard.press(177);
   }
   else {
-    Keyboard.release(53);
+    Keyboard.release(177);
   }
 
 
-  // Start - 1
+  // Start - Enter
   if (start == LOW) {
-    Keyboard.press(49); delay(100);
+    Keyboard.press(176); delay(100);
   }
   else {
-    Keyboard.release(49);
+    Keyboard.release(176);
   }
   
 }
