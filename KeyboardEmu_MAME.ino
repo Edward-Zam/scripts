@@ -44,10 +44,10 @@ void setup() {
 void loop() 
 {  
   // Button labels:  
-  int joystickUp = digitalRead(2);  
-  int joystickDown = digitalRead(3);  
-  int joystickLeft = digitalRead(4);  
-  int joystickRight = digitalRead(5);  
+  int joystickUp = digitalRead(5); 
+  int joystickDown = digitalRead(4);
+  int joystickLeft = digitalRead(2);  
+  int joystickRight = digitalRead(3);  
   int button1 = digitalRead(6);  
   int button2 = digitalRead(7);  
   int button3 = digitalRead(8);  
